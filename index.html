@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Aarthi Iswarya! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background particles -->
+    <div class="particle-container" id="particles"></div>
+    
+    <!-- Story Container -->
+    <div class="story-container">
+        <!-- Story Segments -->
+        <section class="story-segment" id="greeting">
+            <div class="story-content">
+                <h1 class="story-text story-heading">Hi Aarthi Iswarya</h1>
+                <button class="continue-btn btn btn--primary">Continue →</button>
+            </div>
+        </section>
+
+        <section class="story-segment hidden" id="compliment">
+            <div class="story-content">
+                <p class="story-text story-paragraph">I really love your name btw!</p>
+                <button class="continue-btn btn btn--primary">Continue →</button>
+            </div>
+        </section>
+
+        <section class="story-segment hidden" id="birthday_recognition">
+            <div class="story-content">
+                <p class="story-text story-excited">It's your birthday!!</p>
+            
+                <button class="continue-btn btn btn--primary">Continue →</button>
+            </div>
+        </section>
+
+        <section class="story-segment hidden" id="initial_plan">
+            <div class="story-content">
+                <p class="story-text story-paragraph">I was going to send you a regular birthday message with some nice wishes and call it a day...</p>
+                <button class="continue-btn btn btn--primary">Continue →</button>
+            </div>
+        </section>
+
+        <section class="story-segment hidden" id="pause">
+            <div class="story-content">
+                <p class="story-text story-pause">But then I stopped.</p>
+                <button class="continue-btn btn btn--primary">Continue →</button>
+            </div>
+        </section>
+
+        <section class="story-segment hidden" id="realization">
+            <div class="story-content">
+                <p class="story-text story-paragraph">I realized, I wanted to do something</p>
+                <p class="story-text story-emphasis">**special**</p>
+                <button class="continue-btn btn btn--primary">Continue →</button>
+            </div>
+        </section>
+
+        <section class="story-segment hidden" id="reason">
+            <div class="story-content">
+                <p class="story-text story-paragraph">Because,</p>
+                <p class="story-text story-special">You are Special :)</p>
+                <button class="continue-btn btn btn--primary">Continue →</button>
+            </div>
+        </section>
+
+        <section class="story-segment hidden" id="so">
+            <div class="story-content">
+                <div class="letters-container">
+                    <span class="story-letter">S</span>
+                    <span class="story-letter">O</span>
+                </div>
+                <button class="continue-btn btn btn--primary">Continue →</button>
+            </div>
+        </section>
+
+        <section class="story-segment hidden" id="big_reveal">
+            <div class="story-content">
+                <h1 class="story-text celebration-text">HAPPY BIRTHDAY!</h1>
+                <div class="celebration-effects">
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                </div>
+                <button class="continue-btn btn btn--primary">Continue →</button>
+            </div>
+        </section>
+
+        <!-- Interactive Sections -->
+        <section class="interactive-section hidden" id="character_section">
+            <div class="story-content">
+                <h2 class="section-title">Your Beloved Cartoon Friends</h2>
+                <p class="section-subtitle">Tap on each character to see their birthday message!</p>
+                
+                <div class="character-grid">
+                    <div class="character-card" data-character="Jackie Chan Adventures">
+                        <div class="character-icon">🥋</div>
+                        <h3>Jackie Chan Adventures</h3>
+                        <p>Adventure and action-packed fun!</p>
+                        <div class="character-message hidden"></div>
+                    </div>
+                    <div class="character-card" data-character="Tom and Jerry">
+                        <div class="character-icon">🐱🐭</div>
+                        <h3>Tom and Jerry</h3>
+                        <p>Classic comedy that never gets old!</p>
+                        <div class="character-message hidden"></div>
+                    </div>
+                    <div class="character-card" data-character="Horrid Henry">
+                        <div class="character-icon">😈</div>
+                        <h3>Horrid Henry</h3>
+                        <p>Mischievous fun and laughter!</p>
+                        <div class="character-message hidden"></div>
+                    </div>
+                    <div class="character-card" data-character="Doraemon">
+                        <div class="character-icon">🤖</div>
+                        <h3>Doraemon</h3>
+                        <p>Magical gadgets and friendship!</p>
+                        <div class="character-message hidden"></div>
+                    </div>
+                    <div class="character-card" data-character="Ninja Hattori">
+                        <div class="character-icon">🥷</div>
+                        <h3>Ninja Hattori</h3>
+                        <p>Loyalty and ninja skills!</p>
+                        <div class="character-message hidden"></div>
+                    </div>
+                    <div class="character-card" data-character="Creep School">
+                        <div class="character-icon">👻</div>
+                        <h3>Danger School</h3>
+                        <p>Spooky adventures and fun!</p>
+                        <div class="character-message hidden"></div>
+                    </div>
+                </div>
+                
+                <button class="continue-btn btn btn--primary section-continue">Continue →</button>
+            </div>
+        </section>
+
+        <section class="interactive-section hidden" id="balloon_section">
+            <div class="story-content">
+                <h2 class="section-title">Pop the Balloons for Birthday Messages!</h2>
+                <p class="section-subtitle">Each balloon has a special wish for you</p>
+                
+                <div class="balloons-container">
+                    <div class="balloon-item" data-message="🎉 Hope your day is as wonderful as you are!">
+                        <div class="balloon balloon-pink">🎈</div>
+                        <div class="balloon-message hidden"></div>
+                    </div>
+                    <div class="balloon-item" data-message="✨ May all your dreams come true this year!">
+                        <div class="balloon balloon-blue">🎈</div>
+                        <div class="balloon-message hidden"></div>
+                    </div>
+                    <div class="balloon-item" data-message="🌟 Another year of amazing adventures awaits!">
+                        <div class="balloon balloon-yellow">🎈</div>
+                        <div class="balloon-message hidden"></div>
+                    </div>
+                    <div class="balloon-item" data-message="🎊 Celebrate and make beautiful memories!">
+                        <div class="balloon balloon-purple">🎈</div>
+                        <div class="balloon-message hidden"></div>
+                    </div>
+                    <div class="balloon-item" data-message="💖 You're absolutely amazing, Aarthi!">
+                        <div class="balloon balloon-green">🎈</div>
+                        <div class="balloon-message hidden"></div>
+                    </div>
+                    <div class="balloon-item" data-message="🎈 Wishing you endless joy and happiness!">
+                        <div class="balloon balloon-orange">🎈</div>
+                        <div class="balloon-message hidden"></div>
+                    </div>
+                    <div class="balloon-item" data-message="🌈 May your year be filled with magic!">
+                        <div class="balloon balloon-red">🎈</div>
+                        <div class="balloon-message hidden"></div>
+                    </div>
+                    <div class="balloon-item" data-message="🎁 Here's to another fantastic year!">
+                        <div class="balloon balloon-teal">🎈</div>
+                        <div class="balloon-message hidden"></div>
+                    </div>
+                </div>
+                
+                <button class="continue-btn btn btn--primary section-continue">Continue →</button>
+            </div>
+        </section>
+
+        <section class="interactive-section hidden" id="book_section">
+            <div class="story-content">
+                <h2 class="section-title">Your Birthday Memory Book</h2>
+                <p class="section-subtitle">A special collection of wishes just for you</p>
+                
+                <div class="book-container">
+                    <div class="book" id="birthdayBook">
+                        <div class="book-cover" id="bookCover">
+                            <div class="book-cover-content">
+                                <h3>Memories</h3>
+                                <p>For Aarthi Iswarya</p>
+                                <div class="book-decoration">✨📖✨</div>
+                                <button class="btn btn--primary open-book-btn">Open Book</button>
+                            </div>
+                        </div>
+                        
+                        <div class="book-pages hidden" id="bookPages">
+                            <div class="page active" data-page="1">
+                                <h3>Dear Aarthi Iswarya</h3>
+                                <p>On this special day, September 23rd, we celebrate the wonderful person you are.</p>
+                                <div class="page-decoration">🎂✨🎊</div>
+                            </div>
+                            <div class="page" data-page="2">
+                                <h3>Our first meet</h3>
+                                <p>On class VI, when you entered class for the first time, I don't know my heart raced differently</p>
+                                <div class="page-decoration">🎭🤖🥋</div>
+                            </div>
+                            <div class="page" data-page="3">
+                                <h3>Unforgettable Moment</h3>
+                                <p>In the Drama set, I would never forget when you pulled me with you when going to teacher</p>
+                                <div class="page-decoration">🌟🦋</div>
+                            </div>
+                            <div class="page" data-page="4">
+                                <h3>Prayers</h3>
+                                <p>Unfortunately, you are sick and you didn't play in drama. I have prayed for your recovery daily.</p>
+                                <div class="page-decoration">💖🌸🎈</div>
+                            </div>
+                            <div class="page" data-page="5">
+                                <h3>Cycling</h3>
+                                <p>I always come to keeladi by cycle after the school, hoping I would see you there</p>
+                                <div class="page-decoration">💖🌸🎈</div>
+                            </div>
+                            <div class="page" data-page="6">
+                                <h3>Jealous</h3>
+                                <p>I seen you talking to other boys, that makes me very angry and jealous</p>
+                                <div class="page-decoration">💖🌸🎈</div>
+                            </div>
+                            <div class="page" data-page="7">
+                                <h3>Angry</h3>
+                                <p>During IX class, I totally hate our social science teacher because she hit you</p>
+                                <div class="page-decoration">💖🌸🎈</div>
+                            </div>
+                            <div class="page" data-page="8">
+                                <h3>Cry/Weep</h3>
+                                <p>When the last time I seen you, I cried because I know I'll miss you. Seeing you going home in bus 5 killed me </p>
+                                <div class="page-decoration">💖🌸🎈</div>
+                            </div>
+                            <div class="page" data-page="9">
+                                <h3>Break</h3>
+                                <p>I never forget you. I have always thinked of you many times</p>
+                                <div class="page-decoration">💖🌸🎈</div>
+                            </div>
+                            <div class="page" data-page="10">
+                                <h3>Resume</h3>
+                                <p>When I gave you follow request on Insta and You accepted and replied to me, I was the most happiest person in the world</p>
+                                <div class="page-decoration">💖🌸🎈</div>
+                            </div>
+                            <div class="page" data-page="11">
+                                <h3>Confession</h3>
+                                <p>By the time, I confessed that I have loved you was one of the best time ever. I will never forget those.</p>
+                                <div class="page-decoration">💖🌸🎈</div>
+                            </div>
+                            <div class="page" data-page="12">
+                                <h3>Similarity</h3>
+                                <p>I'm so glad to hear that your favourite cartoons are mine favourite too and the Alan Walker is too favourite for us</p>
+                                <div class="page-decoration">💖🌸🎈</div>
+                            </div>
+                            <div class="page" data-page="13">
+                                <h3>Leave Me Alone</h3>
+                                <p>But at the when you started to avoid me, you wanted me to stop texting you, I realized how cruel I am</p>
+                                <div class="page-decoration">💖🌸🎈</div>
+                            </div>
+                            <div class="page" data-page="14">
+                                <h3>Conclusion</h3>
+                                <p>I'm so sorry for being that cruel. I always want you to be happy my friend.</p>
+                                <div class="page-decoration">💖🌸🎈</div>
+                            </div>
+                            <div class="page" data-page="15">
+                                <h3>Happy Birthday!</h3>
+                                <p>Here's to another year of joy, growth, and wonderful memories! 🎉✨</p>
+                                <div class="page-decoration">🎁🎉💫</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="book-controls hidden" id="bookControls">
+                        <div class="page-navigation">
+                            <button class="btn btn--sm" id="prevPageBtn">← Previous</button>
+                            <span class="page-indicator" id="pageIndicator">1 / 15</span>
+                            <button class="btn btn--sm" id="nextPageBtn">Next →</button>
+                        </div>
+                        <button class="btn btn--secondary" id="closeBookBtn">Close Book</button>
+                    </div>
+                </div>
+                
+                <button class="continue-btn btn btn--primary section-continue">Continue →</button>
+            </div>
+        </section>
+
+        <section class="interactive-section hidden" id="closing_section">
+            <div class="story-content">
+                <h2 class="story-text story-heading">Hope you enjoyed your special day! 💝</h2>
+                <p class="story-text story-paragraph">Thank you for letting me celebrate with you, Aarthi Iswarya!</p>
+                <div class="replay-controls">
+                    <button class="btn btn--primary" id="replayBtn">🔄 Experience Again</button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress indicator -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
